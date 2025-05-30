@@ -1,47 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://bycmevetkgrpm"]
+[gd_scene format=3 uid="uid://bcrsdrmuij62i"]
 
-[ext_resource type="Script" uid="uid://u7xekx88x5li" path="res://play.gd" id="1_c0dwi"]
-[ext_resource type="Script" uid="uid://bqk8nc5qhqstk" path="res://settings.gd" id="2_quvj1"]
-[ext_resource type="Script" uid="uid://d3634ajcgb7s0" path="res://quit.gd" id="3_e4n62"]
-
-[node name="Tutel" type="Control"]
+[node name="Control" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-
-[node name="MarginContainer" type="MarginContainer" parent="."]
-layout_mode = 1
-anchors_preset = -1
-anchor_right = 0.106
-anchor_bottom = 0.156
-offset_right = -0.112007
-offset_bottom = -0.0880051
-
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
-layout_mode = 2
-
-[node name="Play" type="Button" parent="MarginContainer/VBoxContainer"]
-layout_mode = 2
-text = "PLAY"
-script = ExtResource("1_c0dwi")
-
-[node name="Settings" type="Button" parent="MarginContainer/VBoxContainer"]
-layout_mode = 2
-text = "SETTINGS"
-script = ExtResource("2_quvj1")
-
-[node name="Quit" type="Button" parent="MarginContainer/VBoxContainer"]
-layout_mode = 2
-text = "QUIT"
-script = ExtResource("3_e4n62")
-
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(64, 66)
-zoom = Vector2(3, 3)
-
-[connection signal="pressed" from="MarginContainer/VBoxContainer/Play" to="MarginContainer/VBoxContainer/Play" method="_on_pressed"]
-[connection signal="pressed" from="MarginContainer/VBoxContainer/Settings" to="MarginContainer/VBoxContainer/Settings" method="_on_pressed"]
-[connection signal="pressed" from="MarginContainer/VBoxContainer/Quit" to="MarginContainer/VBoxContainer/Quit" method="_on_pressed"]
