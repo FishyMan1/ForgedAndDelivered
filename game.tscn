@@ -53,5 +53,5 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.68723, 0)
 
 [node name="Camera3D" type="Camera3D" parent="Player/Head"]
 
-[node name="Pause menu" parent="Player/Head/Camera3D" instance=ExtResource("3_fc0e3")]
+[node name="Pause menu" parent="Player" instance=ExtResource("3_fc0e3")]
 script = null

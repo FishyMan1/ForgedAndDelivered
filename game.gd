@@ -1,6 +1,6 @@
 extends Node3D
 
-@onready var pause_menu = $"Player/Head/Camera3D/Pause menu"
+@onready var pause_menu = $"Player/Pause menu"
 var paused = false
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
