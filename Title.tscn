@@ -89,9 +89,9 @@ script = ExtResource("1_quvj1")
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 0.5
-offset_left = -307.0
+offset_left = -348.0
 offset_top = -315.0
-offset_right = 308.0
+offset_right = 349.0
 offset_bottom = -135.0
 grow_horizontal = 2
 theme_override_constants/shadow_offset_y = -95
@@ -115,7 +115,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 5
 
-[node name="Button" type="Button" parent="VBoxContainer"]
+[node name="Start" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
@@ -129,7 +129,7 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_ax32a")
 theme_override_styles/normal = SubResource("StyleBoxFlat_e704d")
 text = "Play"
 
-[node name="Button2" type="Button" parent="VBoxContainer"]
+[node name="Options" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
@@ -143,7 +143,7 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_e4n62")
 theme_override_styles/normal = SubResource("StyleBoxFlat_e704d")
 text = "Settings"
 
-[node name="Button3" type="Button" parent="VBoxContainer"]
+[node name="Quit" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
@@ -157,6 +157,6 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_yytgh")
 theme_override_styles/normal = SubResource("StyleBoxFlat_e704d")
 text = "Quit"
 
-[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_start_pressed"]
-[connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_setting_pressed"]
-[connection signal="pressed" from="VBoxContainer/Button3" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="VBoxContainer/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="VBoxContainer/Options" to="." method="_on_setting_pressed"]
+[connection signal="pressed" from="VBoxContainer/Quit" to="." method="_on_quit_pressed"]

@@ -35,7 +35,7 @@ environment = SubResource("Environment_fc0e3")
 [node name="CSGBox3D" type="CSGBox3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0625754, 0)
 use_collision = true
-size = Vector3(20, 0.001, 20)
+size = Vector3(200, 0.001, 200)
 
 [node name="Player" type="CharacterBody3D" parent="."]
 script = ExtResource("1_80nbo")
