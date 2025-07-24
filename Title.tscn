@@ -1,7 +1,7 @@
 [gd_scene load_steps=13 format=3 uid="uid://bcrsdrmuij62i"]
 
-[ext_resource type="FontFile" uid="uid://bv063gn6rc2jn" path="res://Cristone.ttf" id="1_c0dwi"]
 [ext_resource type="Script" uid="uid://c2ghkgd0m8owv" path="res://title.gd" id="1_quvj1"]
+[ext_resource type="Texture2D" uid="uid://pkveeo4evugg" path="res://Forged & Delivered.png" id="2_ax32a"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_c0dwi"]
 
@@ -85,32 +85,20 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_quvj1")
 
-[node name="Label" type="Label" parent="."]
-layout_mode = 1
-anchors_preset = -1
-anchor_right = 0.5
-offset_left = -348.0
-offset_top = -315.0
-offset_right = 349.0
-offset_bottom = -135.0
-grow_horizontal = 2
-theme_override_constants/shadow_offset_y = -95
-theme_override_constants/outline_size = 45
-theme_override_fonts/font = ExtResource("1_c0dwi")
-theme_override_font_sizes/font_size = 85
-text = "Forged & Delivered"
-horizontal_alignment = 1
-vertical_alignment = 1
+[node name="Forged&Delivered" type="Sprite2D" parent="."]
+position = Vector2(4.99997, 38.75)
+scale = Vector2(0.759115, 0.719238)
+texture = ExtResource("2_ax32a")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -275.5
-offset_top = -63.0
-offset_right = 275.5
-offset_bottom = 204.0
+offset_left = 259.0
+offset_top = 66.0
+offset_right = 572.0
+offset_bottom = 305.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 5
