@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://jnd2nsfxp78o"]
+
+[ext_resource type="PackedScene" uid="uid://ua8yqe8ip66i" path="res://player.blend" id="1_iknnc"]
+[ext_resource type="Script" uid="uid://b615p8unklu77" path="res://blacksmith.gd" id="1_wl345"]
+[ext_resource type="PackedScene" uid="uid://41nefsbxlltl" path="res://test_item.tscn" id="2_twnxt"]
+
+[node name="Blacksmith" type="Node3D"]
+transform = Transform3D(-0.998787, 0.0492332, 0, 2.15205e-09, 4.36584e-08, 1, 0.0492332, 0.998787, -4.37114e-08, 0, 0, 0)
+script = ExtResource("1_wl345")
+items_to_spawn = Array[PackedScene]([ExtResource("2_twnxt")])
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="Marker3D" type="Marker3D" parent="."]
+transform = Transform3D(1, -3.72529e-09, 0, 3.72529e-09, 1, 0, -8.88178e-16, -1.06581e-14, 1, 7.5429e-09, -1.02478, 1.05057)
+
+[node name="BlackSmith" parent="." instance=ExtResource("1_iknnc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, -4.44089e-16, -3.55271e-15, 1, 0, 0, 0)
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

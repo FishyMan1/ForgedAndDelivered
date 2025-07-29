@@ -6,7 +6,7 @@ var paused = false
 func _ready():
 	pause_menu.hide()
 	Engine.time_scale = 1 
-	Input.mouse_mode = Input.MOUSE_MODE_HIDDEN
+	#Input.mouse_mode = Input.MOUSE_MODE_HIDDEN
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
