@@ -26,7 +26,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.68723, 0)
 
 [node name="PickUp" type="RayCast3D" parent="Head/Camera3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0224937, -0.754876)
-target_position = Vector3(0, 0, -2)
+target_position = Vector3(0, 0, -0.5)
 
 [node name="Pause menu" parent="." instance=ExtResource("2_kne1u")]
 script = null

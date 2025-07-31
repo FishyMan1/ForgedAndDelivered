@@ -22,7 +22,7 @@ glow_enabled = true
 script = ExtResource("1_feb5d")
 
 [node name="Blacksmith" parent="." instance=ExtResource("2_7jktm")]
-transform = Transform3D(-0.998787, 0.0492332, 2.15205e-09, 0, -4.37114e-08, 1, 0.0492332, 0.998787, 4.36584e-08, -0.730429, 0.922759, 1.46206)
+transform = Transform3D(-0.998787, 0.0492332, 2.15205e-09, 0, -4.37114e-08, 1, 0.0492332, 0.998787, 4.36584e-08, -0.730429, 0.44948, 1.46206)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
@@ -32,7 +32,7 @@ shadow_enabled = true
 environment = SubResource("Environment_fc0e3")
 
 [node name="Player" parent="." instance=ExtResource("4_fc0e3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.300896, 0)
+transform = Transform3D(0.996207, 0, -0.0870168, 0, 1, 0, 0.0870168, 0, 0.996207, 0.608931, 0.300896, -2.85377)
 
 [node name="Castle" parent="." instance=ExtResource("4_7jktm")]
 transform = Transform3D(200, 0, 0, 0, 200, 0, 0, 0, 200, 0, 0, 0)
