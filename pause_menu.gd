@@ -1,12 +1,14 @@
 extends Control
 
-
 func _ready() -> void:
 	visible = false
+	# Set the process mode so the pause menu can still receive input when paused
+	process_mode = Node.PROCESS_MODE_WHEN_PAUSED
+	
 	# Optional: Connect signals programmatically
-	$Resume.pressed.connect(_on_resume_pressed)
-	$Settings.pressed.connect(_on_settings_pressed)
-	$Exit.pressed.connect(_on_exit_pressed)
+	$VBoxContainer/Resume.pressed.connect(_on_resume_pressed)
+	$VBoxContainer/Settings.pressed.connect(_on_settings_pressed)
+	$VBoxContainer/Exit.pressed.connect(_on_exit_pressed)
 
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("ui_cancel"):
@@ -31,4 +33,8 @@ func _on_exit_pressed() -> void:
 
 func _on_settings_pressed() -> void:
 	# Example: Show settings submenu
-	$SettingsSubMenu.visible = true
+	# Make sure SettingsSubMenu exists or replace with your actual settings logic
+	if has_node("SettingsSubMenu"):
+		$SettingsSubMenu.visible = true
+	else:
+		print("Settings pressed - implement your settings menu here")
