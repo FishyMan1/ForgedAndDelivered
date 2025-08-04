@@ -2,14 +2,14 @@ extends CharacterBody3D
 
 # Movement variables
 @export var walk_speed: float = 5.0
-@export var sprint_speed: float = 8.0
+@export var sprint_speed: float = 10.0
 @export var jump_velocity: float = 4.5
 @export var mouse_sensitivity: float = 0.002
 @export var bob_freq: float = 2.0
 @export var bob_amp: float = 0.08
 
 # Pickup variables
-@export var pickup_range: float = 3.0
+@export var pickup_range: float = 1.5
 @export var pickup_force: float = 10.0
 
 # Physics
@@ -100,6 +100,8 @@ func _physics_process(delta):
 	
 	# Move the character
 	move_and_slide()
+
+
 
 func pickup_object():
 	if pickup_ray.is_colliding():

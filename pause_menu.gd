@@ -5,15 +5,12 @@ func _ready() -> void:
 	# Set the process mode so the pause menu can still receive input when paused
 	process_mode = Node.PROCESS_MODE_WHEN_PAUSED
 	
-	# Optional: Connect signals programmatically
-	$VBoxContainer/Resume.pressed.connect(_on_resume_pressed)
-	$VBoxContainer/Settings.pressed.connect(_on_settings_pressed)
-	$VBoxContainer/Exit.pressed.connect(_on_exit_pressed)
 
 func _input(event: InputEvent) -> void:
-	if event.is_action_pressed("ui_cancel"):
+	if event.is_action_pressed("cancel"):
 		if get_tree().paused:
 			resume_game()
+			
 		else:
 			pause_game()
 
