@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://bpbvpcp38u8jl"]
+[gd_scene load_steps=9 format=3 uid="uid://bpbvpcp38u8jl"]
 
 [ext_resource type="Script" uid="uid://sder8ybq2pjd" path="res://game.gd" id="1_feb5d"]
 [ext_resource type="PackedScene" uid="uid://jnd2nsfxp78o" path="res://Blacksmith.tscn" id="2_7jktm"]
 [ext_resource type="PackedScene" uid="uid://0x5dti5xmwfu" path="res://Castle.fbx" id="4_7jktm"]
 [ext_resource type="PackedScene" uid="uid://3im8qltlvybn" path="res://Player.tscn" id="4_fc0e3"]
+[ext_resource type="PackedScene" uid="uid://b5edp41l84qil" path="res://man.glb" id="5_7jktm"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_e2o6t"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -36,3 +37,6 @@ transform = Transform3D(0.996207, 0, -0.0870168, 0, 1, 0, 0.0870168, 0, 0.996207
 
 [node name="Castle" parent="." instance=ExtResource("4_7jktm")]
 transform = Transform3D(200, 0, 0, 0, 200, 0, 0, 0, 200, 0, 0, 0)
+
+[node name="man" parent="." instance=ExtResource("5_7jktm")]
+transform = Transform3D(1, 0, 0, 0, 0.105518, 0.994417, 0, -0.994417, 0.105518, -0.358265, 1.94864, -1.20258)
