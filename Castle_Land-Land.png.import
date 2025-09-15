@@ -2,28 +2,26 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b2ylkj6gh5rt5"
-path.s3tc="res://.godot/imported/Castle_0.png-feb1e723623404e916a704f47e2b47e9.s3tc.ctex"
+uid="uid://d2u0qxgnnrre3"
+path.s3tc="res://.godot/imported/Castle_Land-Land.png-6ea66f03eb1f3da0d5644344807e6aee.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "48ebc3002d80026c415ccde71a674126"
+"md5": "fb2aec6aec05438e75f48618d6c8a5cd"
 }
 
 [deps]
 
-source_file="res://Castle_0.png"
-dest_files=["res://.godot/imported/Castle_0.png-feb1e723623404e916a704f47e2b47e9.s3tc.ctex"]
+source_file="res://Castle_Land-Land.png"
+dest_files=["res://.godot/imported/Castle_Land-Land.png-6ea66f03eb1f3da0d5644344807e6aee.s3tc.ctex"]
 
 [params]
 
 compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
-compress/uastc_level=0
-compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
 compress/normal_map=0
 compress/channel_pack=0
@@ -31,10 +29,6 @@ mipmaps/generate=true
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""
-process/channel_remap/red=0
-process/channel_remap/green=1
-process/channel_remap/blue=2
-process/channel_remap/alpha=3
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/normal_map_invert_y=false

@@ -2,28 +2,26 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b2ylkj6gh5rt5"
-path.s3tc="res://.godot/imported/Castle_0.png-feb1e723623404e916a704f47e2b47e9.s3tc.ctex"
+uid="uid://btish48t6s0bl"
+path.s3tc="res://.godot/imported/man_Box-Box.png-50617540cfa00dc996bcc8c6c0b178db.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "48ebc3002d80026c415ccde71a674126"
+"md5": "357eca4e1d48dc385724340ef0dc23aa"
 }
 
 [deps]
 
-source_file="res://Castle_0.png"
-dest_files=["res://.godot/imported/Castle_0.png-feb1e723623404e916a704f47e2b47e9.s3tc.ctex"]
+source_file="res://man_Box-Box.png"
+dest_files=["res://.godot/imported/man_Box-Box.png-50617540cfa00dc996bcc8c6c0b178db.s3tc.ctex"]
 
 [params]
 
 compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
-compress/uastc_level=0
-compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
 compress/normal_map=0
 compress/channel_pack=0
@@ -31,10 +29,6 @@ mipmaps/generate=true
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""
-process/channel_remap/red=0
-process/channel_remap/green=1
-process/channel_remap/blue=2
-process/channel_remap/alpha=3
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/normal_map_invert_y=false
